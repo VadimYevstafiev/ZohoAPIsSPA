@@ -18,8 +18,6 @@ class AccountController extends Controller
 
     public function store(CreateAccountRequest $request)
     {
-
-        dd($request);
         $requestData = collect($request->validated());
         $data = [
             'data' => [
